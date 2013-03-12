@@ -1,0 +1,247 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEC8E83F16EF6BA60024DD3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC8E83E16EF6BA60024DD3E /* Foundation.framework */; };
+		CEC8E84216EF6BA60024DD3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8E84116EF6BA60024DD3E /* main.m */; };
+		CEC8E84616EF6BA60024DD3E /* NCJK.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEC8E84516EF6BA60024DD3E /* NCJK.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEC8E83916EF6BA60024DD3E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				CEC8E84616EF6BA60024DD3E /* NCJK.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CEC8E83B16EF6BA60024DD3E /* NCJK */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NCJK; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC8E83E16EF6BA60024DD3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEC8E84116EF6BA60024DD3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEC8E84416EF6BA60024DD3E /* NCJK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NCJK-Prefix.pch"; sourceTree = "<group>"; };
+		CEC8E84516EF6BA60024DD3E /* NCJK.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NCJK.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEC8E83816EF6BA60024DD3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC8E83F16EF6BA60024DD3E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEC8E83216EF6BA60024DD3E = {
+			isa = PBXGroup;
+			children = (
+				CEC8E84016EF6BA60024DD3E /* NCJK */,
+				CEC8E83D16EF6BA60024DD3E /* Frameworks */,
+				CEC8E83C16EF6BA60024DD3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEC8E83C16EF6BA60024DD3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8E83B16EF6BA60024DD3E /* NCJK */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEC8E83D16EF6BA60024DD3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8E83E16EF6BA60024DD3E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEC8E84016EF6BA60024DD3E /* NCJK */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8E84116EF6BA60024DD3E /* main.m */,
+				CEC8E84516EF6BA60024DD3E /* NCJK.1 */,
+				CEC8E84316EF6BA60024DD3E /* Supporting Files */,
+			);
+			path = NCJK;
+			sourceTree = "<group>";
+		};
+		CEC8E84316EF6BA60024DD3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8E84416EF6BA60024DD3E /* NCJK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEC8E83A16EF6BA60024DD3E /* NCJK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC8E84916EF6BA60024DD3E /* Build configuration list for PBXNativeTarget "NCJK" */;
+			buildPhases = (
+				CEC8E83716EF6BA60024DD3E /* Sources */,
+				CEC8E83816EF6BA60024DD3E /* Frameworks */,
+				CEC8E83916EF6BA60024DD3E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NCJK;
+			productName = NCJK;
+			productReference = CEC8E83B16EF6BA60024DD3E /* NCJK */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEC8E83316EF6BA60024DD3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = lifeaether;
+			};
+			buildConfigurationList = CEC8E83616EF6BA60024DD3E /* Build configuration list for PBXProject "NCJK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEC8E83216EF6BA60024DD3E;
+			productRefGroup = CEC8E83C16EF6BA60024DD3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEC8E83A16EF6BA60024DD3E /* NCJK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEC8E83716EF6BA60024DD3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC8E84216EF6BA60024DD3E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CEC8E84716EF6BA60024DD3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CEC8E84816EF6BA60024DD3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CEC8E84A16EF6BA60024DD3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NCJK/NCJK-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEC8E84B16EF6BA60024DD3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NCJK/NCJK-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEC8E83616EF6BA60024DD3E /* Build configuration list for PBXProject "NCJK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC8E84716EF6BA60024DD3E /* Debug */,
+				CEC8E84816EF6BA60024DD3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC8E84916EF6BA60024DD3E /* Build configuration list for PBXNativeTarget "NCJK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC8E84A16EF6BA60024DD3E /* Debug */,
+				CEC8E84B16EF6BA60024DD3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEC8E83316EF6BA60024DD3E /* Project object */;
+}
