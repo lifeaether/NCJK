@@ -10,6 +10,7 @@
 		CEC8E83F16EF6BA60024DD3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC8E83E16EF6BA60024DD3E /* Foundation.framework */; };
 		CEC8E84216EF6BA60024DD3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8E84116EF6BA60024DD3E /* main.m */; };
 		CEC8E84616EF6BA60024DD3E /* NCJK.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEC8E84516EF6BA60024DD3E /* NCJK.1 */; };
+		CEC8E84E16EF6BBB0024DD3E /* NCJKServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8E84D16EF6BBB0024DD3E /* NCJKServer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		CEC8E84116EF6BA60024DD3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEC8E84416EF6BA60024DD3E /* NCJK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NCJK-Prefix.pch"; sourceTree = "<group>"; };
 		CEC8E84516EF6BA60024DD3E /* NCJK.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NCJK.1; sourceTree = "<group>"; };
+		CEC8E84C16EF6BBB0024DD3E /* NCJKServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCJKServer.h; sourceTree = "<group>"; };
+		CEC8E84D16EF6BBB0024DD3E /* NCJKServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCJKServer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 		CEC8E84016EF6BA60024DD3E /* NCJK */ = {
 			isa = PBXGroup;
 			children = (
+				CEC8E84C16EF6BBB0024DD3E /* NCJKServer.h */,
+				CEC8E84D16EF6BBB0024DD3E /* NCJKServer.m */,
 				CEC8E84116EF6BA60024DD3E /* main.m */,
 				CEC8E84516EF6BA60024DD3E /* NCJK.1 */,
 				CEC8E84316EF6BA60024DD3E /* Supporting Files */,
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC8E84216EF6BA60024DD3E /* main.m in Sources */,
+				CEC8E84E16EF6BBB0024DD3E /* NCJKServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
