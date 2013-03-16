@@ -27,7 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CEC8E83B16EF6BA60024DD3E /* NCJK */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NCJK; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC8E83B16EF6BA60024DD3E /* ncjk */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ncjk; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC8E83E16EF6BA60024DD3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEC8E84116EF6BA60024DD3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEC8E84416EF6BA60024DD3E /* NCJK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NCJK-Prefix.pch"; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		CEC8E83C16EF6BA60024DD3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEC8E83B16EF6BA60024DD3E /* NCJK */,
+				CEC8E83B16EF6BA60024DD3E /* ncjk */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,7 +110,7 @@
 			);
 			name = NCJK;
 			productName = NCJK;
-			productReference = CEC8E83B16EF6BA60024DD3E /* NCJK */;
+			productReference = CEC8E83B16EF6BA60024DD3E /* ncjk */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +214,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NCJK/NCJK-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ncjk;
 			};
 			name = Debug;
 		};
@@ -223,7 +223,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NCJK/NCJK-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ncjk;
 			};
 			name = Release;
 		};
@@ -246,6 +246,7 @@
 				CEC8E84B16EF6BA60024DD3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
