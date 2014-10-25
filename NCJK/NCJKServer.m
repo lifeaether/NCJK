@@ -66,9 +66,7 @@ NSString * const NCJKServerStopKey = @"stop";
 
 - (void)setStop:(BOOL)flag
 {
-    [self willChangeValueForKey:NCJKServerStopKey];
     isStop = flag;
-    [self didChangeValueForKey:NCJKServerStopKey];
 }
 
 - (void)start
@@ -135,10 +133,9 @@ NSString * const NCJKServerStopKey = @"stop";
     }
     
     // create stream.
-    NSHost *host = [NSHost hostWithAddress:ms];
     NSInputStream *inputStream = nil;
     NSOutputStream *outputStream = nil;
-    [NSStream getStreamsToHost:host port:port inputStream:&inputStream outputStream:&outputStream];
+    [NSStream getStreamsToHostWithName:ms port:port inputStream:&inputStream outputStream:&outputStream];
     if ( !inputStream || !outputStream ) {
         NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:
                                   NSLocalizedString(@"Failed to open stream",nil), NSLocalizedDescriptionKey,
