@@ -32,7 +32,7 @@
     NCJKServer *server = [NCJKServer serverStart:[self channel] receiveHandler:^(id server, NSString *comment) {
         dispatch_async( dispatch_get_main_queue(), ^{
             [comments insertObject:comment atIndex:0];
-            [tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
+            [tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationRight];
         });
     } errorHandler:^(id server, NSError *error ) {
         dispatch_async( dispatch_get_main_queue(), ^{
