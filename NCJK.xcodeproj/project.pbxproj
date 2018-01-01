@@ -10,6 +10,14 @@
 		CEC8E83F16EF6BA60024DD3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC8E83E16EF6BA60024DD3E /* Foundation.framework */; };
 		CEC8E84216EF6BA60024DD3E /* ncjk-cil.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8E84116EF6BA60024DD3E /* ncjk-cil.m */; };
 		CEC8E84E16EF6BBB0024DD3E /* NCJKServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8E84D16EF6BBB0024DD3E /* NCJKServer.m */; };
+		CEF81CC51FF90D7B0010F4FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF81CC41FF90D7B0010F4FE /* AppDelegate.m */; };
+		CEF81CCB1FF90D7B0010F4FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF81CC91FF90D7B0010F4FE /* Main.storyboard */; };
+		CEF81CCD1FF90D7B0010F4FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF81CCC1FF90D7B0010F4FE /* Assets.xcassets */; };
+		CEF81CD01FF90D7B0010F4FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF81CCE1FF90D7B0010F4FE /* LaunchScreen.storyboard */; };
+		CEF81CD31FF90D7C0010F4FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF81CD21FF90D7B0010F4FE /* main.m */; };
+		CEF81CD91FF912D60010F4FE /* ChannelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF81CD81FF912D60010F4FE /* ChannelTableViewController.m */; };
+		CEF81CDC1FF9241C0010F4FE /* NCJKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF81CDB1FF9241C0010F4FE /* NCJKTableViewController.m */; };
+		CEF81CDD1FF929250010F4FE /* NCJKServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8E84D16EF6BBB0024DD3E /* NCJKServer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +39,18 @@
 		CEC8E84416EF6BA60024DD3E /* NCJK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NCJK-Prefix.pch"; sourceTree = "<group>"; };
 		CEC8E84C16EF6BBB0024DD3E /* NCJKServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCJKServer.h; sourceTree = "<group>"; };
 		CEC8E84D16EF6BBB0024DD3E /* NCJKServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCJKServer.m; sourceTree = "<group>"; };
+		CEF81CC11FF90D7B0010F4FE /* ncjk-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ncjk-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF81CC31FF90D7B0010F4FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEF81CC41FF90D7B0010F4FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEF81CCA1FF90D7B0010F4FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEF81CCC1FF90D7B0010F4FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEF81CCF1FF90D7B0010F4FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEF81CD11FF90D7B0010F4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF81CD21FF90D7B0010F4FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEF81CD71FF912D60010F4FE /* ChannelTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewController.h; sourceTree = "<group>"; };
+		CEF81CD81FF912D60010F4FE /* ChannelTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewController.m; sourceTree = "<group>"; };
+		CEF81CDA1FF9241C0010F4FE /* NCJKTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCJKTableViewController.h; sourceTree = "<group>"; };
+		CEF81CDB1FF9241C0010F4FE /* NCJKTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCJKTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +59,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC8E83F16EF6BA60024DD3E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF81CBE1FF90D7B0010F4FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +84,7 @@
 		CEC8E83216EF6BA60024DD3E = {
 			isa = PBXGroup;
 			children = (
+				CEF81CC21FF90D7B0010F4FE /* ncjk-ios */,
 				CE4AFA3F1FF90BB800511AD8 /* ncjk-cli */,
 				CEC8E84016EF6BA60024DD3E /* ncjk */,
 				CEC8E83D16EF6BA60024DD3E /* Frameworks */,
@@ -68,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC8E83B16EF6BA60024DD3E /* ncjk */,
+				CEF81CC11FF90D7B0010F4FE /* ncjk-ios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +127,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CEF81CC21FF90D7B0010F4FE /* ncjk-ios */ = {
+			isa = PBXGroup;
+			children = (
+				CEF81CC31FF90D7B0010F4FE /* AppDelegate.h */,
+				CEF81CC41FF90D7B0010F4FE /* AppDelegate.m */,
+				CEF81CD71FF912D60010F4FE /* ChannelTableViewController.h */,
+				CEF81CD81FF912D60010F4FE /* ChannelTableViewController.m */,
+				CEF81CDA1FF9241C0010F4FE /* NCJKTableViewController.h */,
+				CEF81CDB1FF9241C0010F4FE /* NCJKTableViewController.m */,
+				CEF81CC91FF90D7B0010F4FE /* Main.storyboard */,
+				CEF81CCC1FF90D7B0010F4FE /* Assets.xcassets */,
+				CEF81CCE1FF90D7B0010F4FE /* LaunchScreen.storyboard */,
+				CEF81CD11FF90D7B0010F4FE /* Info.plist */,
+				CEF81CD21FF90D7B0010F4FE /* main.m */,
+			);
+			path = "ncjk-ios";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,6 +165,23 @@
 			productReference = CEC8E83B16EF6BA60024DD3E /* ncjk */;
 			productType = "com.apple.product-type.tool";
 		};
+		CEF81CC01FF90D7B0010F4FE /* ncjk-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF81CD61FF90D7C0010F4FE /* Build configuration list for PBXNativeTarget "ncjk-ios" */;
+			buildPhases = (
+				CEF81CBD1FF90D7B0010F4FE /* Sources */,
+				CEF81CBE1FF90D7B0010F4FE /* Frameworks */,
+				CEF81CBF1FF90D7B0010F4FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ncjk-ios";
+			productName = "ncjk-ios";
+			productReference = CEF81CC11FF90D7B0010F4FE /* ncjk-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +190,12 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = lifeaether;
+				TargetAttributes = {
+					CEF81CC01FF90D7B0010F4FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = CEC8E83616EF6BA60024DD3E /* Build configuration list for PBXProject "ncjk" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -133,6 +203,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CEC8E83216EF6BA60024DD3E;
 			productRefGroup = CEC8E83C16EF6BA60024DD3E /* Products */;
@@ -140,9 +211,23 @@
 			projectRoot = "";
 			targets = (
 				CEC8E83A16EF6BA60024DD3E /* ncjk-cli */,
+				CEF81CC01FF90D7B0010F4FE /* ncjk-ios */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEF81CBF1FF90D7B0010F4FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF81CD01FF90D7B0010F4FE /* LaunchScreen.storyboard in Resources */,
+				CEF81CCD1FF90D7B0010F4FE /* Assets.xcassets in Resources */,
+				CEF81CCB1FF90D7B0010F4FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEC8E83716EF6BA60024DD3E /* Sources */ = {
@@ -154,7 +239,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEF81CBD1FF90D7B0010F4FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF81CDD1FF929250010F4FE /* NCJKServer.m in Sources */,
+				CEF81CD31FF90D7C0010F4FE /* main.m in Sources */,
+				CEF81CDC1FF9241C0010F4FE /* NCJKTableViewController.m in Sources */,
+				CEF81CC51FF90D7B0010F4FE /* AppDelegate.m in Sources */,
+				CEF81CD91FF912D60010F4FE /* ChannelTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEF81CC91FF90D7B0010F4FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF81CCA1FF90D7B0010F4FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEF81CCE1FF90D7B0010F4FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF81CCF1FF90D7B0010F4FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CEC8E84716EF6BA60024DD3E /* Debug */ = {
@@ -164,6 +280,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -196,6 +313,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -232,6 +350,97 @@
 			};
 			name = Release;
 		};
+		CEF81CD41FF90D7C0010F4FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "ncjk-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lifeaether.ncjk-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEF81CD51FF90D7C0010F4FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "ncjk-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lifeaether.ncjk-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -249,6 +458,15 @@
 			buildConfigurations = (
 				CEC8E84A16EF6BA60024DD3E /* Debug */,
 				CEC8E84B16EF6BA60024DD3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF81CD61FF90D7C0010F4FE /* Build configuration list for PBXNativeTarget "ncjk-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF81CD41FF90D7C0010F4FE /* Debug */,
+				CEF81CD51FF90D7C0010F4FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

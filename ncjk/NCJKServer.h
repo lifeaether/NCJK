@@ -18,6 +18,6 @@ extern const NSInteger NCJKServerErrorCodeReadStream;
 
 @property (nonatomic, getter = isStop, setter = setStop:) BOOL isStop;
 
-+ (id)serverStart:(NSString *)channelIdentifier receiveHandler:(void (^)(id server, NSXMLElement *element))receive errorHandler:(void (^)(id server, NSError *error))error;
++ (id)serverStart:(NSString *)channelIdentifier receiveHandler:(void (^)(id server, NSString *comment))receive errorHandler:(void (^)(id server, NSError *error))error;
 
 @end
