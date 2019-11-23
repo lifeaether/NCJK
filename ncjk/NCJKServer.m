@@ -27,7 +27,7 @@ NSString * const NCJKServerStopKey = @"stop";
 
 @implementation NCJKServer
 
-@synthesize identifier, receiveHandler, errorHandler, isStop;
+@synthesize identifier, receiveHandler, errorHandler;
 
 - (void)dealloc
 {
@@ -59,11 +59,6 @@ NSString * const NCJKServerStopKey = @"stop";
     [server setStop:NO];
     [NSThread detachNewThreadSelector:@selector(start) toTarget:server withObject:nil];
     return server;
-}
-
-- (void)setStop:(BOOL)flag
-{
-    isStop = flag;
 }
 
 - (void)start
