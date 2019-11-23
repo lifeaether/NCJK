@@ -162,39 +162,36 @@ NSString * const NCJKServerStopKey = @"stop";
         NSMutableData *receivedData = [NSMutableData data];
         while ( ! [self isStop] ) {
             @autoreleasepool {
-                if ( [inputStream hasBytesAvailable] ) {
-                    static const size_t maxlen = 1024;
-                    u_int8_t buffer[maxlen];
-                    const NSInteger len = [inputStream read:buffer maxLength:maxlen];
-                    if ( len < 0 ) {    // error occurs
-                        NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-                                                  NSLocalizedString(@"Failed to read stream.",nil), NSLocalizedDescriptionKey,
-                                                  NSLocalizedString(@"Failed to read stream.", nil), NSLocalizedFailureReasonErrorKey,
-                                                  nil];
-                        error = [NSError errorWithDomain:NCJKServerErrorDomain code:NCJKServerErrorCodeReadStream userInfo:userInfo];
-                        [self errorHandler]( self, error );
-                        [self setStop:YES];
-                    } else if ( len == 0 ) {    // end of buffer.
-                        [self setStop:YES];
-                    } else {
-                        for ( NSInteger i = 0; i < len; i++) {
-                            if ( buffer[i] == 0 ) {
-                                NSString *string = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
-                                NSScanner *scanner = [NSScanner scannerWithString:string];
-                                if ( [scanner scanString:@"<chat" intoString:nil] && [scanner scanUpToString:@">" intoString:nil] && [scanner scanString:@">" intoString:nil] ) {
-                                    NSString *comment = nil;
-                                    if ( [scanner scanUpToString:@"</chat>" intoString:&comment] ) {
-                                        [self receiveHandler]( self, comment );
-                                    }
+                static const size_t maxlen = 1024;
+                u_int8_t buffer[maxlen];
+                const NSInteger len = [inputStream read:buffer maxLength:maxlen];
+                if ( len < 0 ) {    // error occurs
+                    NSLog( @"%@", [inputStream streamError] );
+                    NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:
+                                              NSLocalizedString(@"Failed to read stream.",nil), NSLocalizedDescriptionKey,
+                                              NSLocalizedString(@"Failed to read stream.", nil), NSLocalizedFailureReasonErrorKey,
+                                              nil];
+                    error = [NSError errorWithDomain:NCJKServerErrorDomain code:NCJKServerErrorCodeReadStream userInfo:userInfo];
+                    [self errorHandler]( self, error );
+                    [self setStop:YES];
+                } else if ( len == 0 ) {    // end of buffer.
+                    [self setStop:YES];
+                } else {
+                    for ( NSInteger i = 0; i < len; i++) {
+                        if ( buffer[i] == 0 ) {
+                            NSString *string = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+                            NSScanner *scanner = [NSScanner scannerWithString:string];
+                            if ( [scanner scanString:@"<chat" intoString:nil] && [scanner scanUpToString:@">" intoString:nil] && [scanner scanString:@">" intoString:nil] ) {
+                                NSString *comment = nil;
+                                if ( [scanner scanUpToString:@"</chat>" intoString:&comment] ) {
+                                    [self receiveHandler]( self, comment );
                                 }
-                                [receivedData setLength:0];
-                            } else {
-                                [receivedData appendBytes:buffer+i length:1];
                             }
+                            [receivedData setLength:0];
+                        } else {
+                            [receivedData appendBytes:buffer+i length:1];
                         }
                     }
-                } else {
-                    [runLoop runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
                 }
             }
         }
