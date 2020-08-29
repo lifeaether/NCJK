@@ -17,6 +17,7 @@ extern const NSInteger NCJKServerErrorCodeReadStream;
 @interface NCJKServer : NSObject
 
 @property (atomic, getter = isStop, setter = setStop:) BOOL isStop;
+@property (atomic) NSTimeInterval timeout;
 
 + (id)serverStart:(NSString *)channelIdentifier receiveHandler:(void (^)(id server, NSString *comment))receive errorHandler:(void (^)(id server, NSError *error))error;
 

@@ -40,7 +40,7 @@
             [tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
         });
     }];
-    
+    [server setTimeout:60];
     [self setServer:server];
 }
 

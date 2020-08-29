@@ -23,20 +23,38 @@ void terminate()
     fprintf( stdout, "\n" );
 }
 
+BOOL options( int argc, const char *argv[], NSString **channel, NSTimeInterval *timeout )
+{
+    for ( int i = 1; i < argc; i++ ) {
+        if ( strcmp( argv[i], "-t" ) == 0 ) {
+            *timeout = [[NSString stringWithUTF8String:argv[++i]] integerValue];
+        } else {
+            *channel = [NSString stringWithUTF8String:argv[i]];
+        }
+    }
+    
+    if ( ! (*channel) ) {
+        return NO;
+    }
+    return YES;
+}
+
 int main(int argc, const char * argv[])
 {
     signal( SIGINT, terminate );
     
     @autoreleasepool {
-        NSArray *arguments = [[NSProcessInfo processInfo] arguments];
-        if ( [arguments count] == 2 ) {
-            NSString *channel = [arguments objectAtIndex:1];
+        NSString *channel = nil;
+        NSTimeInterval timeout = 0;
+        if ( options( argc, argv, &channel, &timeout ) ) {
             server = [NCJKServer serverStart:channel receiveHandler:^(id server, NSString *comment) {
                 fprintf( stdout, "%s\n", [comment UTF8String] );
                 fflush( stdout );
             } errorHandler:^(id server, NSError *error ) {
                 fprintf( stderr, "%s\n", [[error description] UTF8String] );
             }];
+            
+            [server setTimeout:timeout];
             
             while ( ! [server isStop] ) {
                 [NSThread sleepForTimeInterval:1];
